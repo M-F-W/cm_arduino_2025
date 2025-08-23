@@ -1,0 +1,66 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{define a}
+\PYG{c+c1}{//\PYGZsh{}define b}
+\PYG{c+c1}{//\PYGZsh{}define c}
+\PYG{c+c1}{//\PYGZsh{}define d}
+
+\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{define pinoA 8}
+\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{define pinoB 9}
+\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{define pinoC 10}
+\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{define pinoSaida 13}
+
+\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{A}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{false}\PYG{p}{;}
+\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{B}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{false}\PYG{p}{;}
+\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{C}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{false}\PYG{p}{;}
+
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{setup}\PYG{p}{(}\PYG{p}{)}\PYG{p}{\PYGZob{}}
+\PYG{+w}{	}\PYG{n}{pinMode}\PYG{p}{(}\PYG{n}{pinoA}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{INPUT}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{	}\PYG{n}{pinMode}\PYG{p}{(}\PYG{n}{pinoB}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{INPUT}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{	}\PYG{n}{pinMode}\PYG{p}{(}\PYG{n}{pinoC}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{INPUT}\PYG{p}{)}\PYG{p}{;}
+
+\PYG{+w}{ 	}\PYG{n}{pinMode}\PYG{p}{(}\PYG{n}{pinoSaida}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{OUTPUT}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{  	}
+\PYG{+w}{  	}\PYG{n}{Serial}\PYG{p}{.}\PYG{n}{begin}\PYG{p}{(}\PYG{l+m+mi}{9600}\PYG{p}{)}\PYG{p}{;}
+
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{loop}\PYG{p}{(}\PYG{p}{)}\PYG{p}{\PYGZob{}}
+
+\PYG{+w}{  }\PYG{n}{A}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{o}{!}\PYG{n}{digitalRead}\PYG{p}{(}\PYG{n}{pinoA}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{B}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{o}{!}\PYG{n}{digitalRead}\PYG{p}{(}\PYG{n}{pinoB}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{C}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{o}{!}\PYG{n}{digitalRead}\PYG{p}{(}\PYG{n}{pinoC}\PYG{p}{)}\PYG{p}{;}
+
+
+\PYG{+w}{    }\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{ifdef a}
+\PYG{+w}{      }\PYG{k}{if}\PYG{p}{(}\PYG{n}{A}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{B}\PYG{p}{)}\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{digitalWrite}\PYG{p}{(}\PYG{n}{pinoSaida}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{HIGH}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{digitalWrite}\PYG{p}{(}\PYG{n}{pinoSaida}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{LOW}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{endif}
+
+\PYG{+w}{    }\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{ifdef b}
+\PYG{+w}{  	  }\PYG{k}{if}\PYG{p}{(}\PYG{n}{A}\PYG{+w}{ }\PYG{o}{|}\PYG{o}{|}\PYG{+w}{ }\PYG{n}{B}\PYG{p}{)}\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{digitalWrite}\PYG{p}{(}\PYG{n}{pinoSaida}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{HIGH}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{digitalWrite}\PYG{p}{(}\PYG{n}{pinoSaida}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{LOW}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{endif}
+
+\PYG{+w}{    }\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{ifdef c}
+\PYG{+w}{      }\PYG{k}{if}\PYG{p}{(}\PYG{n}{A}\PYG{+w}{ }\PYG{o}{|}\PYG{o}{|}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{B}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{C}\PYG{p}{)}\PYG{p}{)}\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{digitalWrite}\PYG{p}{(}\PYG{n}{pinoSaida}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{HIGH}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{digitalWrite}\PYG{p}{(}\PYG{n}{pinoSaida}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{LOW}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{endif}
+
+\PYG{+w}{    }\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{ifdef d}
+\PYG{+w}{      }\PYG{k}{if}\PYG{p}{(}\PYG{p}{(}\PYG{n}{A}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{B}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{|}\PYG{o}{|}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{!}\PYG{n}{A}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{o}{\PYGZam{}}\PYG{+w}{ }\PYG{n}{C}\PYG{p}{)}\PYG{p}{)}\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{digitalWrite}\PYG{p}{(}\PYG{n}{pinoSaida}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{HIGH}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{digitalWrite}\PYG{p}{(}\PYG{n}{pinoSaida}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{LOW}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{      }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{c+cp}{\PYGZsh{}}\PYG{c+cp}{endif}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}
