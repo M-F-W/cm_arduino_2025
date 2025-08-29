@@ -1,0 +1,19 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {section}{\numberline {1}Introdução}{3}{section.1}%
+\contentsline {section}{\numberline {2}Fundamentação teórica}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Arquitetura Cliente-Servidor}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Comunicação Serial}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}GPIO (General Purpose Input/Output)}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Chip Select (CS)}{3}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Microcontroladores}{4}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Metodologia}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Materiais Utilizados}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Diagrama de Conexões}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Configuração dos Microcontroladores}{4}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Microcontrolador Servidor}{4}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Microcontroladores Clientes}{5}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Implementação do Código}{6}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Código do Microcontrolador Servidor}{6}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Código do Microcontrolador Cliente}{7}{subsubsection.3.4.2}%
+\contentsline {section}{\numberline {4}Resultados}{8}{section.4}%
+\contentsline {section}{\numberline {5}Conclusão}{9}{section.5}%
