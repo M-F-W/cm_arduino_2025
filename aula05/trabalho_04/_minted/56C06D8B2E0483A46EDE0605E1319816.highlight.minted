@@ -1,0 +1,33 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{// C++ code}
+\PYG{c+c1}{//}
+
+\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{dirAv}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{;}
+\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{dirRc}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{false}\PYG{p}{;}
+
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{setup}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{n}{pinMode}\PYG{p}{(}\PYG{n}{A0}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{INPUT}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{pinMode}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{OUTPUT}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{  }\PYG{c+c1}{// Motor}
+\PYG{+w}{  }\PYG{n}{pinMode}\PYG{p}{(}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{OUTPUT}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{pinMode}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{OUTPUT}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{pinMode}\PYG{p}{(}\PYG{l+m+mi}{11}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{OUTPUT}\PYG{p}{)}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{loop}\PYG{p}{(}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{varA}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{analogRead}\PYG{p}{(}\PYG{n}{A0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{varTransicao}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{map}\PYG{p}{(}\PYG{n}{varA}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{1023}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{255}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{analogWrite}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{varTransicao}\PYG{p}{)}\PYG{p}{;}
+
+\PYG{+w}{  }\PYG{c+c1}{// Motor}
+
+\PYG{+w}{  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{varPWM}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{30}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{analogWrite}\PYG{p}{(}\PYG{l+m+mi}{11}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{varPWM}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{delay}\PYG{p}{(}\PYG{l+m+mi}{2000}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{dirAv}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{o}{!}\PYG{n}{dirAv}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{dirRc}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{o}{!}\PYG{n}{dirRc}\PYG{p}{;}
+
+\PYG{+w}{  }\PYG{n}{digitalWrite}\PYG{p}{(}\PYG{l+m+mi}{9}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{dirAv}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{digitalWrite}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{dirRc}\PYG{p}{)}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}

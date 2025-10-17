@@ -124,21 +124,22 @@ fonttitle=\bfseries,#1}
 \end{center}
 \thispagestyle{empty}
 \setcounter{page}{1}
-\newpage
 
+\newpage
 % -- Summary -- %
 \begin{center}
 	\tableofcontents
 \end{center}
 \thispagestyle{empty}
-\newpage
 
+\newpage
 % -- Introduction -- %
 \section{Introdução}
 Em sistemas embarcados a compreensão da comunicação entre microcontroladores e integração efeciente entre hardware e software é essencial. Entro os modelos utilizados nesse contexto destaca-se a arquitetura Cliente-Servidor que permite centralizar o controle, dessa forma coordenando o funcionamento das unidades subordinadas.
 
 Neste trabalho, exploramos a implementação de um sistema de comunicação serial entre três microcontroladores associando o uso de GPIOs como chip select para a correta identificação dos dispositivos que devem responder aos comandos enviados. Através de botões físicos vinculados aos microcontroladores do tipo cliente o usuário pode fazer o acionamento e desligamento individual dos LEDs conectados ao microcontrolador correspondente. O microcontrolador do tipo servidor é responsável por receber os comandos e repassá-los aos clientes corretos, garantindo a execução das ações solicitadas.
 
+\newpage
 % -- Teorical foundation -- %
 \section{Fundamentação teórica}
 \subsection{Arquitetura Cliente-Servidor}
@@ -152,6 +153,7 @@ O Chip Select (CS) é um sinal utilizado em sistemas de comunicação serial par
 \subsection{Microcontroladores}
 Microcontroladores são pequenos computadores em um único chip que contêm um processador, memória e periféricos de entrada/saída. Eles são amplamente utilizados em sistemas embarcados para controlar dispositivos eletrônicos, executar tarefas específicas e interagir com o ambiente.
 
+\newpage
 \section{Metodologia}
 \subsection{Materiais Utilizados}
 \begin{itemize}
@@ -190,11 +192,11 @@ Os microcontroladores clientes são responsáveis por monitorar os botões físi
 \subsection{Implementação do Código}
 \subsubsection{Código do Microcontrolador Servidor}
 \begin{mybox}[label={lst:codigo_servidor},title={Código do Microcontrolador Servidor}]{}
-	\inputminted[fontsize=\footnotesize,breaklines,linenos]{cpp}{codigo_servidor.ino}
+	\inputminted[fontsize=\footnotesize,breaklines,linenos]{cpp}{./arduino/codigo_servidor/codigo_servidor.ino}
 \end{mybox}
 \subsubsection{Código do Microcontrolador Cliente}
 \begin{mybox}[label={lst:codigo_cliente},title={Código do Microcontrolador Cliente}]{}
-	\inputminted[fontsize=\footnotesize,breaklines,linenos]{cpp}{codigo_cliente.ino}
+	\inputminted[fontsize=\footnotesize,breaklines,linenos]{cpp}{./arduino/codigo_cliente/codigo_cliente.ino}
 \end{mybox}
 \newpage
 \section{Resultados}
@@ -213,5 +215,10 @@ Através da implementação do sistema de comunicação serial entre os microcon
 \end{center}
 
 A implementação de um sistema de comunicação serial entre microcontroladores utilizando a arquitetura Cliente-Servidor demonstrou a eficácia dessa abordagem para o controle e monitoramento de dispositivos em sistemas embarcados. A utilização de GPIOs como Chip Select permitiu a seleção precisa dos dispositivos, garantindo que os comandos fossem direcionados corretamente. A integração de botões físicos para acionar os LEDs mostrou como a interação do usuário pode ser facilmente incorporada em sistemas embarcados. Este trabalho reforça a importância de compreender os conceitos de comunicação serial e arquitetura Cliente-Servidor para o desenvolvimento de soluções eficientes e escaláveis em aplicações de engenharia de controle e automação e engenharia da computação.
+
+\rule{\textwidth}{0.4pt}
+\subsubsection{Link do TinkerCAD}
+\url{https://www.tinkercad.com/things/5rhsM6DAYVq-brilliant-luulia-elzing/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard&sharecode=Q1B5XRHh_h2rFmrkxMFGBgP1fBbbUQ7nosW_mD-sV9Q}
+
 
 \end{document}

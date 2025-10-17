@@ -23,9 +23,9 @@ void loop() {
     digitalWrite(11, LOW);
   }
   if (digitalRead(9) == LOW) {
-    varMicro01 = !varMicro01;
+    varMicro02 = !varMicro02;
     digitalWrite(12, HIGH);
-    if (varMicro01) {
+    if (varMicro02) {
       Serial.println("L");
     } else {
       Serial.println("D");

@@ -296,10 +296,10 @@ INPUT ./images/fluxograma_cliente.png
 OUTPUT _423F328A6313D087E106B427E96866EA.data.minted
 INPUT ./_423F328A6313D087E106B427E96866EA.config.minted
 INPUT ./_minted/default.style.minted
-INPUT ./codigo_servidor.ino
-INPUT ./_minted/9E7DEACB9486F7B455B0C27275B9428F.highlight.minted
-INPUT ./codigo_cliente.ino
-INPUT ./_minted/2F09BA7B62E7051E6F7A1A72B6F11A0A.highlight.minted
+INPUT ./arduino/codigo_servidor/codigo_servidor.ino
+INPUT ./_minted/A9EB5E72E70E3BC0BAA0285EB5906F1C.highlight.minted
+INPUT ./arduino/codigo_cliente/codigo_cliente.ino
+INPUT ./_minted/39A0429B533CFF1CF97C37D4F72EC0EF.highlight.minted
 INPUT ./images/arduino.png
 INPUT ./images/arduino.png
 INPUT ./trabalho_02.aux

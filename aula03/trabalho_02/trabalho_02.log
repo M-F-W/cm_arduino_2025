@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.7.4)  29 AUG 2025 10:32
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.7.4)  27 SEP 2025 04:57
  restricted system commands enabled.
  file:line:error style messages enabled.
 **trabalho_02.tex
@@ -1165,34 +1165,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--131
 [2]
 
 [3]
-<images/diagrama_conexoes.png, id=152, 2097.8375pt x 1019.81pt>
+
+[4]
+<images/diagrama_conexoes.png, id=161, 2097.8375pt x 1019.81pt>
 File: images/diagrama_conexoes.png Graphic file (type png)
 <use images/diagrama_conexoes.png>
-Package luatex.def Info: images/diagrama_conexoes.png  used on input line 169.
+Package luatex.def Info: images/diagrama_conexoes.png  used on input line 171.
 (luatex.def)             Requested size: 341.43437pt x 165.9739pt.
-<images/fluxograma_servidor.png, id=153, 1160.335pt x 1477.52pt>
+<images/fluxograma_servidor.png, id=162, 1158.3275pt x 1411.2725pt>
 File: images/fluxograma_servidor.png Graphic file (type png)
 <use images/fluxograma_servidor.png>
-Package luatex.def Info: images/fluxograma_servidor.png  used on input line 178.
-(luatex.def)             Requested size: 341.43437pt x 434.75992pt.
+Package luatex.def Info: images/fluxograma_servidor.png  used on input line 180.
+(luatex.def)             Requested size: 341.43437pt x 415.97723pt.
 
 
-[4<./images/diagrama_conexoes.png>]
-<images/fluxograma_cliente.png, id=160, 1152.305pt x 1393.205pt>
+[5<./images/diagrama_conexoes.png>]
+<images/fluxograma_cliente.png, id=170, 1094.0875pt x 1174.3875pt>
 File: images/fluxograma_cliente.png Graphic file (type png)
 <use images/fluxograma_cliente.png>
-Package luatex.def Info: images/fluxograma_cliente.png  used on input line 186.
-(luatex.def)             Requested size: 341.43437pt x 412.82016pt.
+Package luatex.def Info: images/fluxograma_cliente.png  used on input line 188.
+(luatex.def)             Requested size: 341.43437pt x 366.49344pt.
 
 
-[5<./images/fluxograma_servidor.png>]
+[6<./images/fluxograma_servidor.png>]
 \pydata@fh@_423F328A6313D087E106B427E96866EA.data.minted=\write7
 
 \openout7 = _423F328A6313D087E106B427E96866EA.data.minted
-runsystem(latexminted config  --timestamp 20250829103235 423F328A6313D087E106B427E96866EA)...executed.
+runsystem(latexminted config  --timestamp 20250927045715 423F328A6313D087E106B427E96866EA)...executed.
  (./_423F328A6313D087E106B427E96866EA.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250829103235 423F328A6313D087E106B427E96866EA)...executed.
- (./_minted/default.style.minted) (./_minted/9E7DEACB9486F7B455B0C27275B9428F.highlight.minted
+runsystem(latexminted cleanconfig  --timestamp 20250927045715 423F328A6313D087E106B427E96866EA)...executed.
+ (./_minted/default.style.minted) (./_minted/A9EB5E72E70E3BC0BAA0285EB5906F1C.highlight.minted
 LaTeX Font Info:    Font shape `TU/JetBrainsMono(0)/m/n' will be
 (Font)              scaled to size 9.42825pt on input line 1.
 LaTeX Font Info:    Font shape `TU/JetBrainsMono(0)/m/it' will be
@@ -1201,46 +1203,67 @@ LaTeX Font Info:    Font shape `TU/JetBrainsMono(0)/b/n' will be
 (Font)              scaled to size 9.42825pt on input line 4.
 )
 
-[6<./images/fluxograma_cliente.png>] (./_minted/2F09BA7B62E7051E6F7A1A72B6F11A0A.highlight.minted)
+[7<./images/fluxograma_cliente.png>] (./_minted/39A0429B533CFF1CF97C37D4F72EC0EF.highlight.minted)
 
-[7]
-<images/arduino.png, id=181, 2519.4125pt x 1778.645pt>
+[8]
+<images/arduino.png, id=190, 2519.4125pt x 1778.645pt>
 File: images/arduino.png Graphic file (type png)
 <use images/arduino.png>
-Package luatex.def Info: images/arduino.png  used on input line 204.
+Package luatex.def Info: images/arduino.png  used on input line 206.
 (luatex.def)             Requested size: 341.43437pt x 241.02946pt.
 
 
-[8<./images/arduino.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 212--212
+[9<./images/arduino.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
 [][]\TU/ARIAL.TTF(0)/b/n/17.28 Con-clu-são|
  []
 
 
+Overfull \hbox (18.0pt too wide) in paragraph at lines 219--220
+[][] 
+ []
 
-[9] (./trabalho_02.aux)
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 220.
+
+LaTeX Font Info:    Font shape `TU/JetBrainsMono(0)/m/n' will be
+(Font)              scaled to size 11.3139pt on input line 221.
+
+Overfull \hbox (61.10448pt too wide) in paragraph at lines 221--222
+[][][]$\TU/JetBrainsMono(0)/m/n/12 https://www.tinkercad.com/things/5rhsM6DAYVq-[]brilliant-[]luulia-[]elzing/
+ []
+
+
+Overfull \hbox (48.39282pt too wide) in paragraph at lines 221--222
+\TU/JetBrainsMono(0)/m/n/12 editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard&sharecode=
+ []
+
+
+
+[10] (./trabalho_02.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `trabalho_02.out' has not changed.
-(rerunfilecheck)             Checksum: BA900A1D4A5E6B2B759A14C7E81CABD4;3109.
+(rerunfilecheck)             Checksum: F395AC4901314D5D437580B34EDA3FE7;3263.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38826 strings out of 475506
+ 38830 strings out of 475506
  100000,1648299 words of node,token memory allocated
- 1348 words of node memory still in use:
-   31 hlist, 2 vlist, 14 rule, 5 glue, 4 kern, 1 glyph, 84 attribute, 59 glue_spec, 80 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorstack nodes
-   avail lists: 2:3692,3:527,4:634,5:254,6:96,7:6111,8:3,9:774,10:11,11:856
- 60950 multiletter control sequences out of 65536+600000
- 62 fonts using 16250583 bytes
+ 1360 words of node memory still in use:
+   31 hlist, 2 vlist, 14 rule, 5 glue, 4 kern, 1 glyph, 86 attribute, 59 glue_spec, 81 attribute_list, 2 write, 24 pdf_literal, 1 pdf_action, 24 pdf_colorstack nodes
+   avail lists: 2:3365,3:511,4:550,5:232,6:87,7:4842,8:182,9:718,10:11,11:678
+ 60952 multiletter control sequences out of 65536+600000
+ 63 fonts using 16531551 bytes
  95i,7n,116p,840b,1124s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/SIL/jetbrainsmono-otf/JetBrainsMono-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/SIL/jetbrainsmono-otf/JetBrainsMono-Bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/SIL/jetbrainsmono-otf/JetBrainsMono-Italic.otf><./fontes/ARIAL.TTF><./fontes/ARIALBD.TTF>
-Output written on trabalho_02.pdf (10 pages, 509378 bytes).
+Output written on trabalho_02.pdf (11 pages, 510312 bytes).
 
-PDF statistics: 227 PDF objects out of 1000 (max. 8388607)
- 166 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 131072)
- 400 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 244 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 131072)
+ 408 words of extra memory for PDF output out of 10000 (max. 100000000)
 
